@@ -2,7 +2,6 @@
   import { faCaretDown } from "@fortawesome/free-solid-svg-icons/faCaretDown";
   import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
   import { faPlus } from "@fortawesome/free-solid-svg-icons/faPlus";
-  import { tick } from "svelte";
   import Fa from "svelte-fa";
   import { twMerge } from "tailwind-merge";
   import Button from "./Button.svelte";
@@ -34,7 +33,7 @@
   $: if (input) input.focus();
 </script>
 
-<label class="flex flex-col cursor-pointer">
+<label class="flex cursor-pointer flex-col">
   {label}
 
   <form class="flex gap-2" on:submit|preventDefault|capture={onSubmit}>
@@ -45,7 +44,7 @@
           <option value={option}>{option}</option>
         {/each}
       </select>
-      <Fa icon={faCaretDown} class="absolute top-1/2 transform -translate-y-1/2 right-3" />
+      <Fa icon={faCaretDown} class="absolute right-3 top-1/2 -translate-y-1/2 transform" />
     </div>
 
     {#if creating}

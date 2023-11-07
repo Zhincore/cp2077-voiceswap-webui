@@ -9,6 +9,9 @@ export default {
           1000: "#0a0a0a",
         },
       },
+      fontFamily: {
+        cyberpunk: "Cyberpunk",
+      },
     },
   },
   plugins: [],

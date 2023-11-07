@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Cyberpunk;
+  src: url(../Cyberpunk.ttf) format(truetype);
+}
+
+@layer utilities {
+  .font-cyberpunk {
+    letter-spacing: -0.45rem;
+    word-spacing: 1rem;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 0.5rem currentColor;
+  }
+}
