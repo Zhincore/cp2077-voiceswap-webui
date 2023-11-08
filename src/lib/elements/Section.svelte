@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="group relative px-6 py-4">
+<div class="group relative my-8 px-6 py-4">
   <div
     inert
     class="wrapper absolute inset-0 opacity-50 transition-all duration-1000 group-hover:opacity-100"
@@ -47,11 +47,10 @@
       unquote("theme('colors.cyan.400')11") 1px,
       unquote("theme('colors.cyan.400')11") 2px
     );
-    transform: scale(1.01);
   }
 
   .wrapper {
-    filter: drop-shadow(0 0 4px theme("colors.cyan.500"));
+    filter: drop-shadow(0 0 4px theme("colors.cyan.400"));
   }
   .group:hover .wrapper {
     filter: drop-shadow(0 0 8px theme("colors.cyan.300"));

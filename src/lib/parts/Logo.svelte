@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { twMerge } from "tailwind-merge";
+
   let classes = "";
   export { classes as class };
 </script>
@@ -8,7 +10,7 @@
   height="296.97"
   version="1.1"
   viewBox="0 0 225 78.573"
-  class={classes}
+  class={twMerge("logo p-4", classes)}
   xml:space="preserve"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -90,3 +92,16 @@
     ></g
   ></svg
 >
+
+<style lang="scss">
+  .logo {
+    background: repeating-linear-gradient(
+        unquote("theme('colors.cyan.400')77"),
+        unquote("theme('colors.cyan.400')77") 1px,
+        transparent 1px,
+        transparent 2px
+      ),
+      radial-gradient(closest-side, transparent, black);
+    background-blend-mode: multiply;
+  }
+</style>

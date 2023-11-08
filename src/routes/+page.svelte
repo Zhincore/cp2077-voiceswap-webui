@@ -8,7 +8,7 @@
 
 <header class="flex items-start justify-center p-4">
   <h1 class="text-red text-4xl">
-    <Logo class="h-32 w-auto" />
+    <Logo class="h-36 w-auto" />
     <span class="sr-only">VoiceSwap</span>
   </h1>
 </header>
@@ -21,7 +21,7 @@
   {project}
 
   <Section>
-    <h1 class="text-glow font-cyberpunk text-4xl text-cyan-300">Ayo what is this</h1>
+    <h1 class="text-glow text-4xl text-cyan-300">Settings</h1>
     <div class="h-[300px]" />
   </Section>
 </main>
