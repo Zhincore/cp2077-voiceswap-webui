@@ -7,6 +7,11 @@
   src: url(../Cyberpunk.ttf) format(truetype);
 }
 
+@font-face {
+  font-family: Rajdhani;
+  src: url(../Rajdhani-Regular.ttf) format(truetype);
+}
+
 @layer utilities {
   .font-cyberpunk {
     letter-spacing: -0.45rem;

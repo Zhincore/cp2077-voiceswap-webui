@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         cyberpunk: "Cyberpunk",
+        sans: "Rajdhani",
       },
     },
   },

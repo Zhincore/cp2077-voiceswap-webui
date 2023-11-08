@@ -1,19 +1,23 @@
 <script lang="ts">
   import Section from "$lib/elements/Section.svelte";
   import Selector from "$lib/elements/Selector.svelte";
+  import Logo from "$lib/parts/Logo.svelte";
 
   let project: string;
 </script>
 
-<header class="flex items-start justify-between p-4">
-  <h1 class="text-red text-4xl">VoiceSwap</h1>
+<header class="flex items-start justify-center p-4">
+  <h1 class="text-red text-4xl">
+    <Logo class="h-32 w-auto" />
+    <span class="sr-only">VoiceSwap</span>
+  </h1>
+</header>
 
+<main class="mx-auto my-8 max-w-5xl">
   <div class="flex items-end gap-2">
     <Selector bind:value={project} canAdd label="Project" options={["test"]} />
   </div>
-</header>
 
-<main class="mx-auto max-w-5xl">
   {project}
 
   <Section>
